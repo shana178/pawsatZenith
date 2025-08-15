@@ -1,0 +1,151 @@
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2,
+h3 {
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Flex container for form */
+.report-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Align Type and Location on the first row */
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+}
+
+/* Each form field takes equal space */
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 45%;
+}
+
+/* Separate row for description and upload */
+.row-full {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Labels */
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Input and select fields */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Textarea full width */
+textarea {
+    min-height: 80px;
+}
+
+/* Upload Image styling */
+.upload-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Center the button near description/upload */
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Report button */
+button {
+    width: 150px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Reports container */
+.reports {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Uniform card size */
+.report-card {
+    background: #f9f9f9;
+    padding: 15px;
+    width: 250px;
+    height: 400px;
+    /* Fixed height */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Standardized image size */
+.report-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Ensuring all cards align properly */
+.report-card p {
+    flex-grow: 1;
+}
+
+/* Filters container */
+.select-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.select-container select {
+    flex: 1;
+}

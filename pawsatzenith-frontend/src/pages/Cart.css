@@ -1,0 +1,159 @@
+/* General Styles */
+.container {
+    max-width: 1200px; /* Set a max-width for the container */
+    margin-top: 2rem;
+  }
+  
+  h2 {
+    font-size: 2.2rem; /* Slightly larger heading */
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  button {
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Button Hover Effects */
+  button:hover {
+    background-color: #e68a00;
+  }
+  
+  /* Cart Items Layout using Grid */
+  .cart-items-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Creates a flexible grid */
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .cart-item {
+    max-width: 320px; /* Limit width for cart items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  .cart-item:hover {
+    transform: scale(1.05); /* Slightly larger scale on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cart-item-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .cart-item-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .cart-item-details {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  input[type="number"] {
+    text-align: center;
+    width: 70px;
+    border-radius: 8px;
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Cart Total Section */
+  h4 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Loading Spinner Customization */
+  .spinner-border {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-width: 5px;
+    border-color: #FFA500;
+    border-top-color: transparent;
+  }
+  
+  /* Responsive Design Adjustments */
+  @media (max-width: 1200px) {
+    .container {
+      margin-top: 1rem;
+    }
+    h2 {
+      font-size: 1.9rem;
+    }
+  
+    .cart-item {
+      max-width: 100%; /* Full width on smaller screens */
+    }
+  
+    .cart-item-content {
+      padding: 8px;
+    }
+  
+    input[type="number"] {
+      width: 60px; /* Smaller input on mobile */
+    }
+  
+    h4 {
+      font-size: 1.2rem; /* Smaller font for total amount */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cart-items-list {
+      grid-template-columns: 1fr; /* Single column on mobile */
+      gap: 15px;
+    }
+  
+    .cart-item {
+      max-width: 100%;
+      margin-bottom: 15px;
+    }
+  
+    .cart-item-content {
+      padding: 5px;
+    }
+  
+    input[type="number"] {
+      width: 50px; /* Even smaller input on mobile */
+    }
+  
+    h4 {
+      font-size: 1rem; /* Adjust total amount size */
+    }
+  
+    h2 {
+      font-size: 1.7rem; /* Smaller heading for mobile */
+    }
+  }
+  

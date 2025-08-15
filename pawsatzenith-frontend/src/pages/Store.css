@@ -1,0 +1,134 @@
+.card-img-top {
+    border-radius: 8px;
+  }
+  
+  .card {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Store Page Styles */
+
+/* Card Image Styling */
+.card-img-top {
+  border-radius: 8px; /* Slightly rounded corners */
+  transition: transform 0.3s ease; /* Smooth scaling on hover */
+}
+
+.card-img-top:hover {
+  transform: scale(1.05); /* Hover effect to slightly enlarge image */
+}
+
+/* Card Styling */
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for a more modern look */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Hover effect to enlarge the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Card Body */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+/* Title Styling */
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Price Styling */
+.card-text {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Add to Cart Button */
+button {
+  font-weight: 600;
+  border-radius: 8px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+button:hover {
+  background-color: #e68a00; /* Darker orange on hover */
+}
+
+/* Container Styling */
+.container {
+  max-width: 1200px; /* Limit the width of the container for better responsiveness */
+  margin-top: 3rem;
+}
+
+/* Store Title Styling */
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+/* Empty State Styling (when no products are available) */
+.col.text-center {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #777;
+}
+
+/* Spinner Customization */
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+  border-width: 5px;
+  border-color: #FFA500; /* Orange spinner */
+  border-top-color: transparent;
+}
+
+/* Alert Styling */
+.alert {
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  background-color: #f8d7da;
+  color: #721c24;
+  border-radius: 8px;
+}
+
+/* Button Group Styling */
+button.w-100 {
+  margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .card-body {
+      padding: 1rem;
+  }
+
+  .card-title {
+      font-size: 1.1rem;
+  }
+
+  .card-text {
+      font-size: 0.9rem;
+  }
+
+  h2 {
+      font-size: 2rem;
+  }
+}
