@@ -7,7 +7,28 @@
 - 🏠 **Shelter Dashboard** – Shelters can post available pets & manage adoptions  
 - 🔐 **Authentication** – Secure login and registration
 
-  Frontend Setup (ReactJS)
+## 🛠️ Tech Stack
+
+### **Frontend**
+- Frameworks: **React (Web)**, **React Native (Mobile)**
+- Styling: **Material-UI**, external **CSS** for custom designs
+- Hosting: **Vercel** (Web), **Google Play Store** (Mobile)
+
+### **Backend**
+- Framework: **Node.js with Express**
+- Authentication: **JWT** for secure user authentication
+- Other Libraries:
+  - **Mongoose** – MongoDB interaction  
+  - **Nodemailer** – Email notifications  
+- Hosting: **AWS Lambda** or **Heroku**
+
+### **Database & Storage**
+- **MongoDB Atlas** – Cloud-hosted database  
+- **Google Cloud Storage** – Image hosting  
+- **MongoDB Backups** – Automated backups  
+
+
+# Frontend Setup (ReactJS)
   cd ../pawsatzenith-frontend
 
 # Install dependencies
